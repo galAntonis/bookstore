@@ -12,6 +12,8 @@ CREATE TABLE "book_language" (
 CREATE TABLE "author" (
 	"author_id"	INTEGER NOT NULL UNIQUE,
 	"author_name"	TEXT NOT NULL,
+	"email" TEXT NOT NULL UNIQUE,
+	"hashed_password" TEXT NOT NULL,
 	PRIMARY KEY("author_id")
 );
 CREATE TABLE "book" (
